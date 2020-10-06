@@ -9,7 +9,7 @@ function changeState(state, action){
     }
   }
 
-function dispatch(action: beef){
+function dispatch(action: 'beef'){
     state = changeState(state, action)
     render()
 }
