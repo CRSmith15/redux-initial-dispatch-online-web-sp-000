@@ -9,7 +9,7 @@ function changeState(state, action){
     }
   }
 
-function dispatch(action: 'beef'){
+function dispatch(action){
     state = changeState(state, action)
     render()
 }
@@ -17,3 +17,5 @@ function dispatch(action: 'beef'){
 function render(){
     document.body.textContent = state.count
 }
+
+dispatch({ type: 'beef'})
